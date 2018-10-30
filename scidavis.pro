@@ -7,8 +7,9 @@
 
 # enable C++11 support
 equals(QT_MAJOR_VERSION, 5) { CONFIG += c++11 }
-equals(QT_MAJOR_VERSION, 4) { QMAKE_CXXFLAGS += -std=c++11 -fpermissive }
-equals(QT_MAJOR_VERSION, 3) { QMAKE_CXXFLAGS += -std=c++0x -fpermissive }
+equals(QT_MAJOR_VERSION, 4) { QMAKE_CXXFLAGS += -std=c++11 }
+equals(QT_MAJOR_VERSION, 3) { QMAKE_CXXFLAGS += -std=c++0x }
+QMAKE_CXXFLAGS += -fpermissive
 
 TEMPLATE = subdirs
 
